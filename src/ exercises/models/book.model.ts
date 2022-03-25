@@ -5,7 +5,7 @@ export class Book {
 
   title: string;
   author: string;
-  status: string;
+  status?: string;
 
   getTitle(): string {
     return this._title;

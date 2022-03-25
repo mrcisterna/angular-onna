@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { MatGridListModule } from '@angular/material/grid-list';
 import { AService } from './services/a.service';
 import { BookAComponent } from './ exercise3/exercise3a.component';
 import { BookBComponent } from './ exercise3/exercise3b.component';
@@ -9,9 +8,11 @@ import { Exercise2Component } from './ exercise2/exercise2.component';
 import { Exercise3Component } from './ exercise3/exercise3.component';
 import { Exercise1Component } from './ exercise1/exercise1.component';
 import { ExercisesRoutingModule } from './exercises.routing.module';
+import { CommonModule } from '@angular/common';
+import { MaterialExampleModule } from '../material.module';
 
 @NgModule({
-  imports: [MatGridListModule, ExercisesRoutingModule],
+  imports: [CommonModule, MaterialExampleModule, ExercisesRoutingModule],
   declarations: [
     Exercise1Component,
     Exercise2Component,
