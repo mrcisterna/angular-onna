@@ -4,9 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { HelloComponent } from './hello.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ExercisesModule } from '../ exercises/exercises.module';
+import { ExercisesModule } from '../exercises/exercises.module';
 import { MaterialExampleModule } from '../material.module';
 
 @NgModule({
@@ -18,7 +17,7 @@ import { MaterialExampleModule } from '../material.module';
     RouterModule,
     ExercisesModule,
   ],
-  declarations: [AppComponent, HelloComponent],
+  declarations: [AppComponent],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }
