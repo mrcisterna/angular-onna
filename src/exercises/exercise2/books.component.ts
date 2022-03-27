@@ -20,3 +20,5 @@ export class BooksComponent implements OnInit {
     })
   }
 }
+// I choose this implementation since from my point of view map is the most clean and accurate solution to get a new array 
+// from another one. Also map is 4 times faster than the forEach -> push approach.

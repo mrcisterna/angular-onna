@@ -18,3 +18,7 @@ export class BookComponent {
     this.service.checkOut(this.book as Book).subscribe();
   }
 }
+// I choose this implementation for 2 main reasons.
+// 1. It meets the Single Responsibility principle: All logic related to get the status of the book is in the Book class
+// 2. book.getStatus() will react to any other call from any other living component within the view bacause it is referenced
+// by the change detection cycle. For example the user can clean the basket and status of the book/s will be updated.

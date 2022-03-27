@@ -11,7 +11,8 @@ const a: any[] = [
   template: `<h1>Original array</h1>
   <div><pre>{{originalItems | json}}</pre></div>
   <h1>Result</h1>
-  <div><pre>{{selectedItems | json}}</pre></div>`,
+  <div><pre>{{selectedItems | json}}</pre></div>
+  <p>src/exercises/exercise1/exercise1.component.ts</p>`,
 })
 export class Exercise1Component implements OnInit {
 
