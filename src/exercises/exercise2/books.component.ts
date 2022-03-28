@@ -20,5 +20,8 @@ export class BooksComponent implements OnInit {
     })
   }
 }
-// I choose this implementation since from my point of view map is the most clean and accurate solution to get a new array 
-// from another one. Also map is 4 times faster than the forEach -> push approach.
+// For these reasons, enumerated below, I choose this implementation:
+// 1. From my point of view map is the most clean and accurate solution to get a new array 
+// 2. Array.map is 4 times faster than Array.forEach -> push approach.
+// 3. map can be chained with other Array methods
+// 4. RxJs Observable supports map, so this code can be refactored in that way 
